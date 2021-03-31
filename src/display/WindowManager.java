@@ -1,6 +1,7 @@
 package display;
 
 import buttons.ChangeBoolean;
+
 import javax.swing.*;
 import java.awt.*;
 
