@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
 
 public class ChangeBoolean implements ActionListener {
     private int steps;
+    private boolean aBoolean;
 
     public ChangeBoolean() {
         steps=0;
@@ -21,7 +22,7 @@ public class ChangeBoolean implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         JButton button = (JButton) e.getSource();
-        boolean aBoolean = button.getText().equals("Ναί");
+        aBoolean = button.getText().equals("Ναί");
 
         if (aBoolean){
             WindowManager.area.setForeground(Color.GREEN);
